@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Mobile Website</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <style>
+      /* Custom CSS to keep footer at the bottom */
+      .ui-page {
+        position: relative !important;
+        height: 100% !important;
+        margin-bottom: 40px; /* Adjust as per footer height */
+      }
+
+      .ui-footer {
+        position: absolute !important;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Simple Mobile Website</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>Welcome to our mobile website!</p>
+
+        <ul data-role="listview" data-inset="true">
+          <li><a href="#aboutPage">About Us</a></li>
+          <li><a href="#servicesPage">Our Services</a></li>
+          <li><a href="#contactPage">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- /content -->
+
+      <div data-role="footer" data-position="fixed">
+        <h4>&copy; 2024 Simple Mobile Website</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="aboutPage">
+      <div data-role="header">
+        <h1>About Us</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>This is a simple mobile website created using jQuery Mobile.</p>
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left"
+          >Back</a
+        >
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="servicesPage">
+      <div data-role="header">
+        <h1>Our Services</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>Here are the services we offer...</p>
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left"
+          >Back</a
+        >
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="contactPage">
+      <div data-role="header">
+        <h1>Contact Us</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <p>Contact information goes here...</p>
+        <a
+          href="#"
+          data-rel="back"
+          class="ui-btn ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left"
+          >Back</a
+        >
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+  </body>
+</html>
